@@ -20,10 +20,8 @@ let tabs = {
   ]
 };
 
-
 populateTabs(tabs);
 setUpEventListeners();
-
 
 function setUpEventListeners(){
   $(".upgrade").click(showUpgrade);
@@ -57,11 +55,9 @@ function setUpEventListeners(){
       $(".subscription-cu .restraint").removeClass("error");
     }
 
-
   });
 
 }
-
 
 function showUpgrade(){
  $(".subscription-home").hide();
@@ -85,6 +81,7 @@ function populateTabs(tabs){
 
  $("#navigation").html(navHtml);
  $("#navigation [data-nav='Subscription']").addClass("selected");
+ showSubscription();
  $("#navigation [data-nav='Subscription']").click(showSubscription);
 
 }
