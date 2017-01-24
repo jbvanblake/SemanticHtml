@@ -1,0 +1,176 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+#app {
+  display:flex;
+  flex-flow:row;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+  padding: 1em;
+}
+#content {
+  margin: 0em 3em;
+  width: 80%
+}
+
+.super-nav {   
+  font-weight: bold;
+  padding: .5em 0em;
+}
+
+.sub-nav{
+  font-weight: normal;
+  margin: .5 .5em;
+  cursor: pointer;
+  padding: 0.2em;
+  width: 120%;
+}
+.sub-nav:hover{
+  color:grey;
+}
+.sub-nav.selected{
+  background-color:white;
+}
+
+.subscription-home {
+  display:none;
+}
+.upgrade-home {
+  display: flex;
+  flex-flow: row;
+}
+
+.upgrade-panel {
+  margin: 0em 2em;
+}
+
+.upgrade-right-bar{ 
+  min-width: 30%;
+}
+
+.shopping-cart {
+  border-color: #d2d1d1;
+  border-style: solid;
+  border-radius: .2em;
+  padding: 1em;
+  display: flex;
+  flex-flow: column;
+  text-align: right;
+}
+
+.shopping-cart .summary {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.feature-table {
+  background-color: #eaeaea;
+  margin: 1em 0em;
+  padding: 1em;
+  font-size: .9em;
+
+}
+.feature-table {
+  background-color: #eaeaea;
+  margin: 1em 0em;
+  padding: 1em;
+  font-size: .9em;
+
+}
+.feature-table .essentials {
+  color: #21d8ba;
+
+}
+.feature-table .pro {
+  color: #21d8ba;
+
+}
+
+.clip-text {
+   overflow: hidden;
+  word-wrap: ellipsis;
+}
+.info-bar {
+  font-weight: bold;
+  background-color: #eaeaea;
+  padding: .5em 3em;
+  margin: 1em 1em;
+}
+
+.tile {
+  background-color: #e6e6e6;;
+  margin: .5em;
+  padding: .4em;
+  border-radius: .2em;
+  border-bottom: #c1bfbf;
+  border-width: medium;
+  display: block;
+  height: 5em;
+  text-align: center;
+}
+
+.small-tile-div {
+    float: left;
+    margin: 2em;
+}
+
+.large-tile-div {
+  float:left;
+}
+
+.link {
+  color:blue;
+}
+.link:hover {
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+.form-group {
+  margin: 1em;
+  flex-flow: column;
+  display: flex;
+}
+.form-group label {
+  padding: 1em 0em;
+}
+.form-group select {
+  padding: .5em;
+  width: 30%;
+}
+.form-group input {
+  padding: .5em;
+  width: 30%;
+}
+
+input:invalid {
+  background-color: #ffe3e3;
+  border-color: red; 
+} 
+
+.form-group .description {
+  margin: 1em;
+}
+
+.form-group .error {
+  color:red;
+}
+
+button.submit {
+  background-color: #5757de;
+  padding: 1em 2em;
+  color: white;
+  font-size: small;
+}
+
+.form-group.disabled {
+  border-color: #d6d5d5;
+  border-style: dashed;
+  background-color: #f9f8f8;
+}

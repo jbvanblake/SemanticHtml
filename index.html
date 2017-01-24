@@ -1,7 +1,140 @@
 <html>
 <head>
 	<title>Semantic Html</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
+
+  <div id='app'>
+    <div id='navigation' class='clip-text'></div>
+
+    <div id='content'>
+
+      <div class="subscription-home">
+        <h1>Your Subscription ($0.00/mo)</h1>
+        <p>Billing cycle ends 12/15/16</p>
+
+
+        <div class='tile'>
+          <div class='small-tile-div'> $0.00</div>
+          <div class='large-tile-div'>
+            <strong>APM Lite</strong>
+            <p>Usage info not currently available</p>
+          </div>
+          <div class='small-tile-div'>
+            <div class='link upgrade'>Upgrade</div>
+          </div>
+        </div>
+
+        <div class='tile clip-text'>
+          <div class='small-tile-div'> $0.00</div>
+          <div class='small-tile-div'>
+            <div>APM Lite</div>
+          </div> <div class='small-tile-div'>
+            <div>APM Lite</div>
+          </div> <div class='small-tile-div'>
+            <div>APM Lite</div>
+          </div> 
+          <div class='small-tile-div'>
+            <div class='link upgrade'>Upgrade</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="upgrade-home">
+        <div class="upgrade-panel">
+          <h1>APM Subscription</h1>
+          <p>New Relic Gives you grouped view for quick diagnosisNew Relic Gives you grouped view for quick diagnosisNew Relic Gives you grouped view for quick diagnosisNew Relic Gives you grouped view for quick diagnosisNew Relic Gives you grouped view for quick diagnosisNew Relic Gives you grouped view for quick diagnosisNew Relic Gives you grouped view for quick diagnosis</p>
+
+          <div class="info-bar">Purchase Options</div>
+
+          <fieldset>
+            <div class='form-group select subscription-pricing'>
+              <label>1. Select Pricing Model</label>
+              <select>
+                <option value="" selected disabled="true">Select One</option>
+                <option value="cloud">Cloud Based</option>
+                <option value="self">Self Hosted</option>
+              </select>
+            </div>
+
+
+            <div class='form-group select subscription-level'>
+              <label>2. Select Level</label>
+              <select >
+                <option value="" selected disabled="true">Select One</option>
+                <option value="lite">Lite</option>
+                <option value="essentials">Essentials</option>
+                <option value="pro">Pro</option>
+              </select>
+              <div class='description'>See features Chart</div>
+            </div>
+
+            <div class='form-group select subscription-commit'>
+              <label>3. Select Commitment</label>
+              <select>
+                <option value="" selected disabled="true">Select One</option>
+                <option value="annual">Annual</option>
+                <option value="monthly">Monthly</option>
+              </select>
+              <div class='description'>
+                <p><strong>Annual:</strong>See features Chart</p>
+                <p><strong>Monthly:</strong>See features Chart</p>
+              </div>
+            </div>
+            <div class='form-group input disabled subscription-cu'>
+              <label>3. Enter Number of Compute Units</label>
+              <input type='number' min='0' disabled="true" placeholder="Example: 5000">
+              <div class='description'>
+                <p><strong>Compute Units:</strong>(# of CPU cores + GB of RAM) x time used. Increments of 500</p>
+                <p class="restraint">Pro has a minimum of 5500CU</p>
+              </div>
+            </div>
+
+          </fieldset>
+
+        </div>
+        <div class="upgrade-right-bar">
+          <div class="shopping-cart">
+            <div>
+              <label>Your APM</label>
+              <div class="summary">
+                <p><strong>Lite</strong><p>
+                <p>Free</p>
+              </div>
+
+              <div class="total-cost">
+                <p>$0.00</p>
+                <p>Per Month</p>
+              </div>
+              <button class="submit">Add to Cart</button>
+            </div>
+
+          </div>
+          <table class="feature-table">
+            <col></col>
+            <col></col>
+            <col class="essentials">
+            <col class="pro">
+            <tr><th>Level Features</th><th>LT</th><th>ESS</th><th>PRO</th></tr>
+            <tr><td>Days of Retention</td><td>1</td><td><p>3</p></td><td>9</td></tr>
+            <tr><td>Throughput, Response Times, and error Rates</td><td>✔</td><td>✔</td><td>✔</td></tr>
+            <tr><td>Filterable error analytics and traces</td><td></td><td>✔</td><td>✔</td></tr>
+            <tr><td>Deep JVM Monitoring</td><td></td><td></td><td>✔</td></tr>
+
+
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
